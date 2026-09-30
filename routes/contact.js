@@ -68,12 +68,12 @@ router.post('/', async (req, res) => {
       const ackResponse = await sendBrevoEmail(
         email,
         'Thank you for contacting OCATECH DIGITAL SOLUTION',
-        `Hi ${name},\n\nThank you for reaching out! I've received your message regarding "${subject}" and will get back to you as soon as possible.\n\nIf you need immediate assistance, feel free to reach me on WhatsApp.\n\nBest regards,\nOluegwu Chigozie\nOCATECH DIGITAL SOLUTION`,
+        `Hi ${name},\n\nThank you for reaching out! I've received your message regarding "${subject}" and will get back to you as soon as possible.\n\nIf you need immediate assistance, feel free to reach me on WhatsApp: https://wa.me/2348165321429\n\nBest regards,\nOluegwu Chigozie\nOCATECH DIGITAL SOLUTION`,
         `
           <h2>Thank you for reaching out!</h2>
           <p>Hi ${name},</p>
           <p>Thank you for contacting <strong>OCATECH DIGITAL SOLUTION</strong>. I've received your message regarding <em>"${subject}"</em> and will get back to you as soon as possible.</p>
-          <p>If you need immediate assistance, feel free to reach me on <strong>WhatsApp</strong>.</p>
+          <p>If you need immediate assistance, feel free to reach me on <strong>WhatsApp</strong>: <a href="https://wa.me/2348165321429" target="_blank" rel="noopener noreferrer">08165321429</a></p>
           <hr>
           <p>Best regards,<br><strong>Oluegwu Chigozie</strong><br>OCATECH DIGITAL SOLUTION</p>
         `
